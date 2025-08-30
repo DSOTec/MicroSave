@@ -10,6 +10,7 @@ import BankLevelSecurity from './components/BankLevelSecurity'
 import MicroSaveCommunity from './components/MicroSaveCommunity'
 import WeeklySavingsChallenge from './components/WeeklySavingsChallenge'
 import TrustedByUsers from './components/TrustedByUsers'
+import StayUpdatedNewsletter from './components/NewsletterComponent'
 
 const App = () => {
   return (
@@ -25,6 +26,7 @@ const App = () => {
    <MicroSaveCommunity />
    <WeeklySavingsChallenge />
    <TrustedByUsers />
+   < StayUpdatedNewsletter />
    </>
   )
 }

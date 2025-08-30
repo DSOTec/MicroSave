@@ -153,44 +153,6 @@ const TrustedByUsers: React.FC = () => {
             </div>
           ))}
         </div>
-
-        {/* Community Testimonial */}
-        <div className="bg-gradient-to-r from-green-900/20 to-blue-900/20 rounded-2xl p-8 border border-gray-700 text-center">
-          <div className="mb-6">
-            <div className="text-6xl mb-4">💫</div>
-            <h3 className="text-2xl font-bold mb-4">Join the Financial Revolution</h3>
-            <p className="text-gray-400 text-lg max-w-3xl mx-auto mb-8">
-              "MicroSave helped me save my first $10,000. The community support and AI guidance made it possible when I thought it never would be."
-            </p>
-            <div className="text-sm text-gray-500">
-              - Jessica Chen, Marketing Manager
-            </div>
-          </div>
-          
-          <button className="bg-green-600 hover:bg-green-700 text-white px-8 py-3 rounded-xl font-semibold transition-colors">
-            Start Your Journey
-          </button>
-        </div>
-
-        {/* Trust Indicators */}
-        <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-          <div className="bg-gray-800/50 rounded-xl p-6">
-            <div className="text-2xl font-bold text-blue-400 mb-2">4.9★</div>
-            <div className="text-sm text-gray-400">App Store Rating</div>
-          </div>
-          <div className="bg-gray-800/50 rounded-xl p-6">
-            <div className="text-2xl font-bold text-green-400 mb-2">99.9%</div>
-            <div className="text-sm text-gray-400">Uptime</div>
-          </div>
-          <div className="bg-gray-800/50 rounded-xl p-6">
-            <div className="text-2xl font-bold text-purple-400 mb-2">256-bit</div>
-            <div className="text-sm text-gray-400">Encryption</div>
-          </div>
-          <div className="bg-gray-800/50 rounded-xl p-6">
-            <div className="text-2xl font-bold text-yellow-400 mb-2">24/7</div>
-            <div className="text-sm text-gray-400">Support</div>
-          </div>
-        </div>
       </div>
     </div>
   );
