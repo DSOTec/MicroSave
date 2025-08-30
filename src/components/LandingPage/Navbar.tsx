@@ -1,4 +1,5 @@
 import React from 'react';
+import { useNavigate } from 'react-router';
 
 interface NavItem {
   label: string;
@@ -7,6 +8,7 @@ interface NavItem {
 
 interface NavbarProps {
   onLaunchApp?: () => void;
+
 }
 
 const Navbar: React.FC<NavbarProps> = ({ onLaunchApp }) => {
@@ -18,6 +20,13 @@ const Navbar: React.FC<NavbarProps> = ({ onLaunchApp }) => {
     { label: 'Security', href: '#security' },
     { label: 'Community', href: '#community' },
   ];
+
+  const navigate = useNavigate();
+
+ const handleLaunchApp = () => {
+  navigate('/dashboard');
+};
+
 
   return (
     <nav className="bg-slate-800 text-white px-6 py-4">
@@ -54,7 +63,7 @@ const Navbar: React.FC<NavbarProps> = ({ onLaunchApp }) => {
 
           {/* Launch App Button */}
           <button
-            onClick={onLaunchApp}
+            onClick={handleLaunchApp }
             className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg font-medium text-sm transition-colors duration-200"
           >
             Launch App
