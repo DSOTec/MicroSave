@@ -12,6 +12,7 @@ import MicroSaveCommunity from './components/LandingPage/MicroSaveCommunity'
 import WeeklySavingsChallenge from './components/LandingPage/WeeklySavingsChallenge'
 import TrustedByUsers from './components/LandingPage/TrustedByUsers'
 import StayUpdatedNewsletter from './components/LandingPage/NewsletterComponent'
+import FrequentlyAskedQuestions from "./components/LandingPage/FrequentlyAskedQuestions";
 import Dashboard from '../src/pages/Dashboard'
 import AIDashboard from '../src/pages/AIDashboard'
 
@@ -34,6 +35,7 @@ const App = () => {
    <WeeklySavingsChallenge />
    <TrustedByUsers />
    < StayUpdatedNewsletter />
+   < FrequentlyAskedQuestions />
         </div>
       } /> 
        <Route path="/Dashboard" element={<Dashboard />} />

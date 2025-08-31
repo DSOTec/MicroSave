@@ -1,5 +1,5 @@
 import { ethers } from 'ethers';
-import { CONTRACT_ADDRESSES, NETWORK_CONFIG, getContractConfig } from '../../../Contract/frontend-integration/contracts';
+import { CONTRACT_ADDRESSES, NETWORK_CONFIG, getContractConfig } from '../config/contracts';
 
 export interface UserSavingsData {
   balance: string;
