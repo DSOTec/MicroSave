@@ -14,14 +14,10 @@ interface NavbarProps {
 }
 
 const NavbarDashboard: React.FC<NavbarProps> = ({
-  userName = "Sarah Chen",
-  userAddress = "0x742d...9A8f",
-  avatarUrl = "/api/placeholder/32/32",
   notificationCount = 3,
   isConnected = true,
   onThemeToggle,
-  onNotificationClick,
-  onProfileClick
+  onNotificationClick
 }) => {
   return (
     <nav className="bg-slate-800 text-white px-6 py-3 flex items-center justify-between">

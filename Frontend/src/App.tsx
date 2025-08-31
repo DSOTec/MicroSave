@@ -1,48 +1,21 @@
 
-import {  Routes, Route } from "react-router";
-import Navbar  from './components/LandingPage/Navbar'
-import HeroSection from './components/LandingPage/HeroSection'
-import SavingsChallenge from './components/LandingPage/SavingsChallenge'
-import RevolutionaryFeatures from './components/LandingPage/RevolutionaryFeatures'
-import HowMicroSaveWorks from './components/LandingPage/HowMicroSaveWorks'
-import SavingsPlans from './components/LandingPage/SavingsPlans'
-import AISavingsAssistant from './components/LandingPage/AISavingsAssistant'
-import BankLevelSecurity from './components/LandingPage/BankLevelSecurity'
-import MicroSaveCommunity from './components/LandingPage/MicroSaveCommunity'
-import WeeklySavingsChallenge from './components/LandingPage/WeeklySavingsChallenge'
-import TrustedByUsers from './components/LandingPage/TrustedByUsers'
-import StayUpdatedNewsletter from './components/LandingPage/NewsletterComponent'
-import FrequentlyAskedQuestions from "./components/LandingPage/FrequentlyAskedQuestions";
-import Dashboard from '../src/pages/Dashboard'
-import AIDashboard from '../src/pages/AIDashboard'
+import { Suspense, lazy } from 'react';
+import { Routes, Route } from "react-router";
+
+// Lazy load pages for code splitting
+const LandingPage = lazy(() => import('./pages/LandingPage'));
+const Dashboard = lazy(() => import('./pages/Dashboard'));
+const AIDashboard = lazy(() => import('./pages/AIDashboard'));
 
 const App = () => {
   return (
-   <>
-
-<Routes>
-      <Route path="/" element={
-        <div>
-       <Navbar />
-   <HeroSection />
-   <SavingsChallenge />
-   <RevolutionaryFeatures />
-   <HowMicroSaveWorks />
-   <SavingsPlans />
-   <AISavingsAssistant />
-   <BankLevelSecurity />
-   <MicroSaveCommunity />
-   <WeeklySavingsChallenge />
-   <TrustedByUsers />
-   < StayUpdatedNewsletter />
-   < FrequentlyAskedQuestions />
-        </div>
-      } /> 
-       <Route path="/Dashboard" element={<Dashboard />} />
-       <Route path="/ai-dashboard" element={<AIDashboard />} />
-    </Routes>
-   
-   </>
+    <Suspense fallback={<div className="flex items-center justify-center min-h-screen"><div className="text-lg">Loading...</div></div>}>
+      <Routes>
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/Dashboard" element={<Dashboard />} />
+        <Route path="/ai-dashboard" element={<AIDashboard />} />
+      </Routes>
+    </Suspense>
   )
 }
 

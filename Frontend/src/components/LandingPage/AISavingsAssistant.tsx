@@ -1,9 +1,7 @@
 import React, { useState } from 'react';
 import { 
-  MessageCircle, 
   TrendingUp, 
   Target, 
-  DollarSign, 
   Brain, 
   CreditCard, 
   BarChart3, 

@@ -2,8 +2,6 @@ import React, { useState } from 'react';
 import { 
   Trophy, 
   Target, 
-  Calendar, 
-  DollarSign,
   Users,
   Clock,
   Award

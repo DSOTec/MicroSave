@@ -6,7 +6,7 @@ import { NETWORK_CONFIG } from '../../config/contracts';
 
 const SavingsInterface: React.FC = () => {
   const { isConnected } = useWeb3();
-  const { userStats, isLoading, txState, deposit, withdraw, withdrawAll, getTestTokens, clearTxState } = useMicroSave();
+  const { userStats, txState, deposit, withdraw, withdrawAll, getTestTokens, clearTxState } = useMicroSave();
   const [depositAmount, setDepositAmount] = useState('');
   const [withdrawAmount, setWithdrawAmount] = useState('');
 

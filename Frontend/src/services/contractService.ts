@@ -1,5 +1,5 @@
 import { ethers } from 'ethers';
-import { CONTRACT_ADDRESSES, NETWORK_CONFIG, getContractConfig } from '../config/contracts';
+import { CONTRACT_ADDRESSES, getContractConfig } from '../config/contracts';
 
 export interface UserSavingsData {
   balance: string;
@@ -22,7 +22,7 @@ export class ContractService {
     try {
       if (typeof window !== 'undefined' && (window as any).ethereum) {
         this.provider = new ethers.BrowserProvider((window as any).ethereum);
-        this.signer = await this.provider.getSigner();
+        this.signer = await (this.provider as any).getSigner();
         
         // Initialize contracts
         const contractNames = ['SavingsPool', 'ScoreRegistry', 'RewardVault', 'MockERC20'] as const;

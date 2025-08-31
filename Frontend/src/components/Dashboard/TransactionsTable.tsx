@@ -76,7 +76,7 @@ const TransactionsTable: React.FC<TransactionsTableProps> = () => {
     return `${sign}$${absAmount.toFixed(2)}`;
   };
 
-  const getAmountColor = (amount: number, type: string) => {
+  const getAmountColor = (type: string) => {
     if (type === 'Withdraw') return 'text-red-500';
     return 'text-green-500';
   };
@@ -121,7 +121,7 @@ const TransactionsTable: React.FC<TransactionsTableProps> = () => {
                 </tr>
               </thead>
               <tbody>
-                {transactions.map((transaction, index) => (
+                {transactions.map((transaction) => (
                   <tr 
                     key={transaction.id}
                     className="border-b border-slate-100 hover:bg-slate-50 transition-colors"
@@ -135,7 +135,7 @@ const TransactionsTable: React.FC<TransactionsTableProps> = () => {
                       </div>
                     </td>
                     <td className="px-6 py-4">
-                      <span className={`text-sm font-semibold ${getAmountColor(transaction.amount, transaction.type)}`}>
+                      <span className={`text-sm font-semibold ${getAmountColor(transaction.type)}`}>
                         {formatAmount(transaction.amount)}
                       </span>
                     </td>
