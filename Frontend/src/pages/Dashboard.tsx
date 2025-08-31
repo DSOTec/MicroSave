@@ -1,9 +1,15 @@
-import React from 'react'
+import NavbarDashboard from '../components/Dashboard/NavbarDashboard'
+import SidebarDashboard from '../components/Dashboard/SidebarDashboard'
 
 const Dashboard = () => {
   return (
-    <div></div>
+    <>
+        <NavbarDashboard />
+        <SidebarDashboard />
+   
+    </>
+      
   )
 }
 
-export default Dashboard
+export default Dashboard;
