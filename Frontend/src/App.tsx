@@ -1,4 +1,5 @@
-import React from 'react'
+
+import {  Routes, Route } from "react-router";
 import Navbar  from './components/LandingPage/Navbar'
 import HeroSection from './components/LandingPage/HeroSection'
 import SavingsChallenge from './components/LandingPage/SavingsChallenge'
@@ -15,7 +16,11 @@ import StayUpdatedNewsletter from './components/LandingPage/NewsletterComponent'
 const App = () => {
   return (
    <>
-   <Navbar />
+
+<Routes>
+      <Route path="/" element={
+        <div>
+       <Navbar />
    <HeroSection />
    <SavingsChallenge />
    <RevolutionaryFeatures />
@@ -27,6 +32,10 @@ const App = () => {
    <WeeklySavingsChallenge />
    <TrustedByUsers />
    < StayUpdatedNewsletter />
+        </div>
+      } /> 
+    </Routes>
+   
    </>
   )
 }
