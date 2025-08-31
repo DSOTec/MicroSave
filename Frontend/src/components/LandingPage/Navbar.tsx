@@ -8,10 +8,19 @@ interface NavItem {
 
 interface NavbarProps {
   onLaunchApp?: () => void;
-
 }
 
 const Navbar: React.FC<NavbarProps> = ({ onLaunchApp }) => {
+  const navigate = useNavigate();
+  
+  const handleLaunchApp = () => {
+    if (onLaunchApp) {
+      onLaunchApp();
+    } else {
+      navigate('/dashboard');
+    }
+  };
+  
   const navItems: NavItem[] = [
     { label: 'Features', href: '#features' },
     { label: 'How It Works', href: '#how-it-works' },
@@ -20,12 +29,6 @@ const Navbar: React.FC<NavbarProps> = ({ onLaunchApp }) => {
     { label: 'Security', href: '#security' },
     { label: 'Community', href: '#community' },
   ];
-
-  const navigate = useNavigate();
-
- const handleLaunchApp = () => {
-  navigate('/dashboard');
-};
 
 
   return (
@@ -63,7 +66,7 @@ const Navbar: React.FC<NavbarProps> = ({ onLaunchApp }) => {
 
           {/* Launch App Button */}
           <button
-            onClick={handleLaunchApp }
+            onClick={handleLaunchApp}
             className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg font-medium text-sm transition-colors duration-200"
           >
             Launch App
