@@ -1,5 +1,6 @@
 import React from 'react';
 import { Moon, Bell } from 'lucide-react';
+import WalletConnect from '../Web3/WalletConnect';
 
 interface NavbarProps {
   userName?: string;
@@ -39,8 +40,11 @@ const NavbarDashboard: React.FC<NavbarProps> = ({
         </div>
       </div>
 
-      {/* Right Section - Theme Toggle, Notifications, Profile */}
+      {/* Right Section - Wallet Connect, Theme Toggle, Notifications */}
       <div className="flex items-center space-x-4">
+        {/* Wallet Connect */}
+        <WalletConnect />
+
         {/* Theme Toggle */}
         <button
           onClick={onThemeToggle}
@@ -62,34 +66,6 @@ const NavbarDashboard: React.FC<NavbarProps> = ({
               {notificationCount > 9 ? '9+' : notificationCount}
             </span>
           )}
-        </button>
-
-        {/* User Profile */}
-        <button
-          onClick={onProfileClick}
-          className="flex items-center space-x-3 hover:bg-slate-700 rounded-lg p-2 transition-colors"
-          aria-label="User profile"
-        >
-          <img
-            src={avatarUrl}
-            alt={userName}
-            className="w-8 h-8 rounded-full border-2 border-gray-600"
-            onError={(e) => {
-              // Fallback to initials if image fails to load
-              const target = e.target as HTMLImageElement;
-              target.style.display = 'none';
-              target.nextElementSibling?.classList.remove('hidden');
-            }}
-          />
-          <div className="hidden w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center">
-            <span className="text-sm font-medium text-white">
-              {userName.split(' ').map(n => n[0]).join('')}
-            </span>
-          </div>
-          <div className="text-left">
-            <div className="text-sm font-medium text-white">{userName}</div>
-            <div className="text-xs text-gray-400">{userAddress}</div>
-          </div>
         </button>
       </div>
     </nav>
