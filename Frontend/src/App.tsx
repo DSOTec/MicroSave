@@ -12,6 +12,7 @@ import MicroSaveCommunity from './components/LandingPage/MicroSaveCommunity'
 import WeeklySavingsChallenge from './components/LandingPage/WeeklySavingsChallenge'
 import TrustedByUsers from './components/LandingPage/TrustedByUsers'
 import StayUpdatedNewsletter from './components/LandingPage/NewsletterComponent'
+import Dashboard from '../src/pages/Dashboard'
 
 const App = () => {
   return (
@@ -34,6 +35,7 @@ const App = () => {
    < StayUpdatedNewsletter />
         </div>
       } /> 
+       <Route path="/Dashboard" element={<Dashboard />} />
     </Routes>
    
    </>
