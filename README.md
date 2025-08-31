@@ -1,15 +1,17 @@
 
 # 🌎 MicroSave dApp – AI-Powered DeFi Savings dApp
 
-> **Financial inclusion for the unbanked in Latin America.**
+> **Financial inclusion for the unbanked.**
 > Save small amounts of stablecoins, get AI nudges to stay consistent, and build an on-chain credit score.
 
 🔗 **Live dApp:** [MicroSave](https://micro-save-m3h2-em7hi8wax-samuel-daniels-projects.vercel.app/)
 🎥 **Demo Video:** [MicroSave](https://www.loom.com/share/d04d17a47a28464aaf2c44cc2f0c3666?sid=93ce6b70-0781-49ff-aa86-e189458597ba)
+
+
+
 ## 💡 The Problem
 
-Over **178 million people in Latin America** are unbanked or underbanked.
-
+* Millions of people struggle to build consistent savings habits 
 * Banks require **high fees, minimum balances, or credit history**.
 * People with irregular incomes can’t access meaningful savings tools.
 * Traditional products don’t incentivize **small, frequent deposits**.
@@ -54,6 +56,7 @@ The result? Millions are excluded from building financial stability.
 
 
 ## 👥 The Team
+@DeborahOlaboye @Olayemi-Salami @DSOTec @Oluwatomilola
 
 We’re builders passionate about **financial inclusion, DeFi, and AI**:
 
@@ -62,7 +65,7 @@ We’re builders passionate about **financial inclusion, DeFi, and AI**:
 * Frontend & UX for mobile-first communities
 * Business & impact strategy
 
-Together, we’re reimagining how people in Latin America can **save, grow, and thrive**.
+Together, we’re reimagining how people in Latin America and around the globe can **save, grow, and thrive**.
 
 
 
