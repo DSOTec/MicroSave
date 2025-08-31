@@ -17,7 +17,7 @@ const Navbar: React.FC<NavbarProps> = ({ onLaunchApp }) => {
     if (onLaunchApp) {
       onLaunchApp();
     } else {
-      navigate('/dashboard');
+      navigate('/ai-dashboard');
     }
   };
   
@@ -57,11 +57,12 @@ const Navbar: React.FC<NavbarProps> = ({ onLaunchApp }) => {
 
         {/* Right Section */}
         <div className="flex items-center space-x-4">
-          {/* Theme Toggle */}
-          <button className="w-8 h-8 rounded-full bg-slate-700 hover:bg-slate-600 transition-colors duration-200 flex items-center justify-center">
-            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
-            </svg>
+          {/* AI Dashboard Button */}
+          <button
+            onClick={() => navigate('/ai-dashboard')}
+            className="bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded-lg font-medium text-sm transition-colors duration-200 flex items-center space-x-2"
+          >
+            <span>AI Dashboard</span>
           </button>
 
           {/* Launch App Button */}

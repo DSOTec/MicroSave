@@ -5,6 +5,7 @@ import type { UserSavingsData } from '../services/contractService';
 import ChatBot from '../components/AI/ChatBot';
 import NudgePanel from '../components/AI/NudgePanel';
 import GoalTracker from '../components/AI/GoalTracker';
+import AITestPanel from '../components/AI/AITestPanel';
 import NavbarDashboard from '../components/Dashboard/NavbarDashboard';
 
 const AIDashboard: React.FC = () => {
@@ -167,6 +168,8 @@ const AIDashboard: React.FC = () => {
         ) : (
           /* Main Dashboard */
           <div className="space-y-8">
+            {/* AI Test Panel for Interactive Demo */}
+            <AITestPanel />
             {/* Stats Overview */}
             <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
               <div className="bg-white rounded-lg shadow-md p-6">
