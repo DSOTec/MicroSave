@@ -13,6 +13,7 @@ import WeeklySavingsChallenge from './components/LandingPage/WeeklySavingsChalle
 import TrustedByUsers from './components/LandingPage/TrustedByUsers'
 import StayUpdatedNewsletter from './components/LandingPage/NewsletterComponent'
 import Dashboard from '../src/pages/Dashboard'
+import AIDashboard from '../src/pages/AIDashboard'
 
 const App = () => {
   return (
@@ -36,6 +37,7 @@ const App = () => {
         </div>
       } /> 
        <Route path="/Dashboard" element={<Dashboard />} />
+       <Route path="/ai-dashboard" element={<AIDashboard />} />
     </Routes>
    
    </>
