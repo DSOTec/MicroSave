@@ -1,0 +1,1295 @@
+{
+  "_format": "hh-sol-cache-2",
+  "files": {
+    "/home/dsotech/Microsave/Contract/microsave-contract/contracts/RewardVault.sol": {
+      "lastModificationDate": 1756511150398,
+      "contentHash": "2e224330d00235154ff9ce47c820a854",
+      "sourceName": "contracts/RewardVault.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/access/Ownable.sol",
+        "./interfaces/IRewardVault.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "RewardVault"
+      ]
+    },
+    "/home/dsotech/Microsave/Contract/microsave-contract/contracts/interfaces/IRewardVault.sol": {
+      "lastModificationDate": 1756511127783,
+      "contentHash": "0294ecf275080bc9b6e532bcfe1608cb",
+      "sourceName": "contracts/interfaces/IRewardVault.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "IRewardVault"
+      ]
+    },
+    "/home/dsotech/Microsave/Contract/microsave-contract/node_modules/@openzeppelin/contracts/access/Ownable.sol": {
+      "lastModificationDate": 1756416633630,
+      "contentHash": "d3c790edc9ccf808a17c5a6cd13614fd",
+      "sourceName": "@openzeppelin/contracts/access/Ownable.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../utils/Context.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "Ownable"
+      ]
+    },
+    "/home/dsotech/Microsave/Contract/microsave-contract/node_modules/@openzeppelin/contracts/utils/Context.sol": {
+      "lastModificationDate": 1756416628882,
+      "contentHash": "67bfbc07588eb8683b3fd8f6f909563e",
+      "sourceName": "@openzeppelin/contracts/utils/Context.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "Context"
+      ]
+    },
+    "/home/dsotech/Microsave/Contract/microsave-contract/node_modules/@openzeppelin/contracts/token/ERC20/ERC20.sol": {
+      "lastModificationDate": 1756416629162,
+      "contentHash": "59dfce11284f2636db261df9b6a18f81",
+      "sourceName": "@openzeppelin/contracts/token/ERC20/ERC20.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC20.sol",
+        "./extensions/IERC20Metadata.sol",
+        "../../utils/Context.sol",
+        "../../interfaces/draft-IERC6093.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "ERC20"
+      ]
+    },
+    "/home/dsotech/Microsave/Contract/microsave-contract/node_modules/@openzeppelin/contracts/token/ERC20/IERC20.sol": {
+      "lastModificationDate": 1756416629379,
+      "contentHash": "9261adf6457863de3e9892f51317ec89",
+      "sourceName": "@openzeppelin/contracts/token/ERC20/IERC20.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.4.16"
+      ],
+      "artifacts": [
+        "IERC20"
+      ]
+    },
+    "/home/dsotech/Microsave/Contract/microsave-contract/node_modules/@openzeppelin/contracts/interfaces/draft-IERC6093.sol": {
+      "lastModificationDate": 1756416629050,
+      "contentHash": "5041977bbe908de2e6ed0270447f79ad",
+      "sourceName": "@openzeppelin/contracts/interfaces/draft-IERC6093.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.8.4"
+      ],
+      "artifacts": [
+        "IERC1155Errors",
+        "IERC20Errors",
+        "IERC721Errors"
+      ]
+    },
+    "/home/dsotech/Microsave/Contract/microsave-contract/node_modules/@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata.sol": {
+      "lastModificationDate": 1756416629385,
+      "contentHash": "513778b30d2750f5d2b9b19bbcf748a5",
+      "sourceName": "@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../IERC20.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.2"
+      ],
+      "artifacts": [
+        "IERC20Metadata"
+      ]
+    },
+    "/home/dsotech/Microsave/Contract/microsave-contract/node_modules/@openzeppelin/contracts/token/ERC20/extensions/ERC20Permit.sol": {
+      "lastModificationDate": 1756416629178,
+      "contentHash": "2343c0c3b51267f4f2639ec3f99cd63e",
+      "sourceName": "@openzeppelin/contracts/token/ERC20/extensions/ERC20Permit.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC20Permit.sol",
+        "../ERC20.sol",
+        "../../../utils/cryptography/ECDSA.sol",
+        "../../../utils/cryptography/EIP712.sol",
+        "../../../utils/Nonces.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "ERC20Permit"
+      ]
+    },
+    "/home/dsotech/Microsave/Contract/microsave-contract/node_modules/@openzeppelin/contracts/token/ERC20/extensions/IERC20Permit.sol": {
+      "lastModificationDate": 1756416629388,
+      "contentHash": "b01905745d47df90c7bd5dd70d498cb7",
+      "sourceName": "@openzeppelin/contracts/token/ERC20/extensions/IERC20Permit.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.4.16"
+      ],
+      "artifacts": [
+        "IERC20Permit"
+      ]
+    },
+    "/home/dsotech/Microsave/Contract/microsave-contract/node_modules/@openzeppelin/contracts/utils/Nonces.sol": {
+      "lastModificationDate": 1756416633628,
+      "contentHash": "c32d108058718efb9061b88e83a83f79",
+      "sourceName": "@openzeppelin/contracts/utils/Nonces.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "Nonces"
+      ]
+    },
+    "/home/dsotech/Microsave/Contract/microsave-contract/node_modules/@openzeppelin/contracts/utils/cryptography/ECDSA.sol": {
+      "lastModificationDate": 1756416629095,
+      "contentHash": "81de029d56aa803972be03c5d277cb6c",
+      "sourceName": "@openzeppelin/contracts/utils/cryptography/ECDSA.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "ECDSA"
+      ]
+    },
+    "/home/dsotech/Microsave/Contract/microsave-contract/node_modules/@openzeppelin/contracts/utils/cryptography/EIP712.sol": {
+      "lastModificationDate": 1756416629098,
+      "contentHash": "d67dfba302ed2489324d7584625c3bde",
+      "sourceName": "@openzeppelin/contracts/utils/cryptography/EIP712.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./MessageHashUtils.sol",
+        "../ShortStrings.sol",
+        "../../interfaces/IERC5267.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "EIP712"
+      ]
+    },
+    "/home/dsotech/Microsave/Contract/microsave-contract/node_modules/@openzeppelin/contracts/utils/ShortStrings.sol": {
+      "lastModificationDate": 1756416637751,
+      "contentHash": "c1be9487e5a64acf23b5d8028482e748",
+      "sourceName": "@openzeppelin/contracts/utils/ShortStrings.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./StorageSlot.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "ShortStrings"
+      ]
+    },
+    "/home/dsotech/Microsave/Contract/microsave-contract/node_modules/@openzeppelin/contracts/interfaces/IERC5267.sol": {
+      "lastModificationDate": 1756416629413,
+      "contentHash": "6e00d2fe4bc0d5f1add753824498bb35",
+      "sourceName": "@openzeppelin/contracts/interfaces/IERC5267.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.4.16"
+      ],
+      "artifacts": [
+        "IERC5267"
+      ]
+    },
+    "/home/dsotech/Microsave/Contract/microsave-contract/node_modules/@openzeppelin/contracts/utils/cryptography/MessageHashUtils.sol": {
+      "lastModificationDate": 1756416633023,
+      "contentHash": "260f3968eefa3bbd30520cff5384cd93",
+      "sourceName": "@openzeppelin/contracts/utils/cryptography/MessageHashUtils.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../Strings.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "MessageHashUtils"
+      ]
+    },
+    "/home/dsotech/Microsave/Contract/microsave-contract/node_modules/@openzeppelin/contracts/utils/StorageSlot.sol": {
+      "lastModificationDate": 1756416637787,
+      "contentHash": "e656d64c4ce918f3d13030b91c935134",
+      "sourceName": "@openzeppelin/contracts/utils/StorageSlot.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "StorageSlot"
+      ]
+    },
+    "/home/dsotech/Microsave/Contract/microsave-contract/node_modules/@openzeppelin/contracts/utils/Strings.sol": {
+      "lastModificationDate": 1756416637788,
+      "contentHash": "d8f70caf0e0c77dc908176ed44812fb7",
+      "sourceName": "@openzeppelin/contracts/utils/Strings.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./math/Math.sol",
+        "./math/SafeCast.sol",
+        "./math/SignedMath.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "Strings"
+      ]
+    },
+    "/home/dsotech/Microsave/Contract/microsave-contract/node_modules/@openzeppelin/contracts/utils/math/Math.sol": {
+      "lastModificationDate": 1756416631480,
+      "contentHash": "5ec781e33d3a9ac91ffdc83d94420412",
+      "sourceName": "@openzeppelin/contracts/utils/math/Math.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../Panic.sol",
+        "./SafeCast.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "Math"
+      ]
+    },
+    "/home/dsotech/Microsave/Contract/microsave-contract/node_modules/@openzeppelin/contracts/utils/math/SignedMath.sol": {
+      "lastModificationDate": 1756416637765,
+      "contentHash": "ae3528afb8bdb0a7dcfba5b115ee8074",
+      "sourceName": "@openzeppelin/contracts/utils/math/SignedMath.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./SafeCast.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "SignedMath"
+      ]
+    },
+    "/home/dsotech/Microsave/Contract/microsave-contract/node_modules/@openzeppelin/contracts/utils/math/SafeCast.sol": {
+      "lastModificationDate": 1756416637722,
+      "contentHash": "2adca1150f58fc6f3d1f0a0f22ee7cca",
+      "sourceName": "@openzeppelin/contracts/utils/math/SafeCast.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "SafeCast"
+      ]
+    },
+    "/home/dsotech/Microsave/Contract/microsave-contract/node_modules/@openzeppelin/contracts/utils/Panic.sol": {
+      "lastModificationDate": 1756416634010,
+      "contentHash": "2133dc13536b4a6a98131e431fac59e1",
+      "sourceName": "@openzeppelin/contracts/utils/Panic.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "Panic"
+      ]
+    },
+    "/home/dsotech/Microsave/Contract/microsave-contract/contracts/SavingsPool.sol": {
+      "lastModificationDate": 1756511155102,
+      "contentHash": "7bc115ecf7961e008eee933913313ca6",
+      "sourceName": "contracts/SavingsPool.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC20/IERC20.sol",
+        "@openzeppelin/contracts/token/ERC20/extensions/IERC20Permit.sol",
+        "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol",
+        "@openzeppelin/contracts/access/Ownable.sol",
+        "@openzeppelin/contracts/utils/ReentrancyGuard.sol",
+        "@openzeppelin/contracts/utils/Pausable.sol",
+        "./interfaces/ISavingsPool.sol",
+        "./interfaces/IScoreRegistry.sol",
+        "./interfaces/IRewardVault.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "SavingsPool"
+      ]
+    },
+    "/home/dsotech/Microsave/Contract/microsave-contract/contracts/interfaces/ISavingsPool.sol": {
+      "lastModificationDate": 1756511133139,
+      "contentHash": "b8ce52d00f76ae4a3c0130447bc11b42",
+      "sourceName": "contracts/interfaces/ISavingsPool.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC20/IERC20.sol",
+        "./IScoreRegistry.sol",
+        "./IRewardVault.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "ISavingsPool"
+      ]
+    },
+    "/home/dsotech/Microsave/Contract/microsave-contract/contracts/interfaces/IScoreRegistry.sol": {
+      "lastModificationDate": 1756511138039,
+      "contentHash": "21a9c9b6ab2bb9f44e659df0270db52e",
+      "sourceName": "contracts/interfaces/IScoreRegistry.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "IScoreRegistry"
+      ]
+    },
+    "/home/dsotech/Microsave/Contract/microsave-contract/node_modules/@openzeppelin/contracts/utils/ReentrancyGuard.sol": {
+      "lastModificationDate": 1756416637671,
+      "contentHash": "190613e556d509d9e9a0ea43dc5d891d",
+      "sourceName": "@openzeppelin/contracts/utils/ReentrancyGuard.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "ReentrancyGuard"
+      ]
+    },
+    "/home/dsotech/Microsave/Contract/microsave-contract/node_modules/@openzeppelin/contracts/utils/Pausable.sol": {
+      "lastModificationDate": 1756416634019,
+      "contentHash": "0d47b53e10b1985efbb396f937626279",
+      "sourceName": "@openzeppelin/contracts/utils/Pausable.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../utils/Context.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "Pausable"
+      ]
+    },
+    "/home/dsotech/Microsave/Contract/microsave-contract/node_modules/@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol": {
+      "lastModificationDate": 1756416637732,
+      "contentHash": "1fb9edee1d763745a62d0b1954998792",
+      "sourceName": "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../IERC20.sol",
+        "../../../interfaces/IERC1363.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "SafeERC20"
+      ]
+    },
+    "/home/dsotech/Microsave/Contract/microsave-contract/node_modules/@openzeppelin/contracts/interfaces/IERC1363.sol": {
+      "lastModificationDate": 1756416629354,
+      "contentHash": "a7fd0f05e36b0d0a21c75340c9c639ec",
+      "sourceName": "@openzeppelin/contracts/interfaces/IERC1363.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC20.sol",
+        "./IERC165.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.2"
+      ],
+      "artifacts": [
+        "IERC1363"
+      ]
+    },
+    "/home/dsotech/Microsave/Contract/microsave-contract/node_modules/@openzeppelin/contracts/interfaces/IERC20.sol": {
+      "lastModificationDate": 1756416629377,
+      "contentHash": "68620db2da7583d9a4919096ac77f577",
+      "sourceName": "@openzeppelin/contracts/interfaces/IERC20.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../token/ERC20/IERC20.sol"
+      ],
+      "versionPragmas": [
+        ">=0.4.16"
+      ],
+      "artifacts": []
+    },
+    "/home/dsotech/Microsave/Contract/microsave-contract/node_modules/@openzeppelin/contracts/interfaces/IERC165.sol": {
+      "lastModificationDate": 1756416629364,
+      "contentHash": "947853028399b7de34bcc3704ee06e99",
+      "sourceName": "@openzeppelin/contracts/interfaces/IERC165.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../utils/introspection/IERC165.sol"
+      ],
+      "versionPragmas": [
+        ">=0.4.16"
+      ],
+      "artifacts": []
+    },
+    "/home/dsotech/Microsave/Contract/microsave-contract/node_modules/@openzeppelin/contracts/utils/introspection/IERC165.sol": {
+      "lastModificationDate": 1756416629366,
+      "contentHash": "7074c93b1ea0a122063f26ddd1db1032",
+      "sourceName": "@openzeppelin/contracts/utils/introspection/IERC165.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.4.16"
+      ],
+      "artifacts": [
+        "IERC165"
+      ]
+    },
+    "/home/dsotech/Microsave/Contract/microsave-contract/contracts/ScoreRegistry.sol": {
+      "lastModificationDate": 1756512692432,
+      "contentHash": "f0f115ed30f268e87bbdc695a41d2116",
+      "sourceName": "contracts/ScoreRegistry.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/access/Ownable.sol",
+        "./interfaces/IScoreRegistry.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "ScoreRegistry"
+      ]
+    },
+    "/home/dsotech/Microsave/Contract/microsave-contract/contracts/mocks/MockERC20.sol": {
+      "lastModificationDate": 1756511144453,
+      "contentHash": "64b58800d98e3806efd7f2db6074776d",
+      "sourceName": "contracts/mocks/MockERC20.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC20/ERC20.sol",
+        "@openzeppelin/contracts/token/ERC20/extensions/ERC20Permit.sol",
+        "@openzeppelin/contracts/access/Ownable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "MockERC20"
+      ]
+    }
+  }
+}

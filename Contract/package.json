@@ -1,0 +1,22 @@
+{
+  "name": "microsave",
+  "version": "1.0.0",
+  "description": "MicroSave - AI-Powered DeFi Savings dApp",
+  "main": "index.js",
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "deploy": "hardhat run scripts/deploy.ts"
+  },
+  "keywords": ["defi", "savings", "ethereum", "solidity"],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "@nomicfoundation/hardhat-network-helpers": "^1.0.0",
+    "@openzeppelin/contracts": "^5.0.0",
+    "hardhat": "^2.22.0",
+    "typescript": "^5.0.0",
+    "@types/node": "^20.0.0"
+  }
+}

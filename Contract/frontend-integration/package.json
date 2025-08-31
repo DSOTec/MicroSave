@@ -1,0 +1,18 @@
+{
+  "name": "@microsave/contracts",
+  "version": "1.0.0",
+  "description": "MicroSave contract addresses and ABIs",
+  "main": "contracts.js",
+  "types": "contracts.d.ts",
+  "files": [
+    "contracts.js",
+    "contracts.d.ts",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc contracts.ts --declaration --outDir ."
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  }
+}

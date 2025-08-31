@@ -1,0 +1,223 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "IScoreRegistry",
+  "sourceName": "contracts/interfaces/IScoreRegistry.sol",
+  "abi": [
+    {
+      "inputs": [],
+      "name": "InvalidUser",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "OnlyPool",
+      "type": "error"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "user",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint16",
+          "name": "score",
+          "type": "uint16"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint16",
+          "name": "streak",
+          "type": "uint16"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint8",
+          "name": "freq30",
+          "type": "uint8"
+        }
+      ],
+      "name": "ScoreSet",
+      "type": "event"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "user",
+          "type": "address"
+        }
+      ],
+      "name": "getUserFreq30",
+      "outputs": [
+        {
+          "internalType": "uint8",
+          "name": "",
+          "type": "uint8"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "user",
+          "type": "address"
+        }
+      ],
+      "name": "getUserScore",
+      "outputs": [
+        {
+          "internalType": "uint16",
+          "name": "",
+          "type": "uint16"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "user",
+          "type": "address"
+        }
+      ],
+      "name": "getUserStats",
+      "outputs": [
+        {
+          "internalType": "uint16",
+          "name": "score",
+          "type": "uint16"
+        },
+        {
+          "internalType": "uint16",
+          "name": "streak",
+          "type": "uint16"
+        },
+        {
+          "internalType": "uint8",
+          "name": "freq30",
+          "type": "uint8"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "user",
+          "type": "address"
+        }
+      ],
+      "name": "getUserStreak",
+      "outputs": [
+        {
+          "internalType": "uint16",
+          "name": "",
+          "type": "uint16"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "savingsPool",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "user",
+          "type": "address"
+        }
+      ],
+      "name": "score",
+      "outputs": [
+        {
+          "internalType": "uint16",
+          "name": "",
+          "type": "uint16"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "user",
+          "type": "address"
+        }
+      ],
+      "name": "streakDays",
+      "outputs": [
+        {
+          "internalType": "uint16",
+          "name": "",
+          "type": "uint16"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "user",
+          "type": "address"
+        },
+        {
+          "internalType": "uint40[]",
+          "name": "userDaysFromPool",
+          "type": "uint40[]"
+        }
+      ],
+      "name": "updateScore",
+      "outputs": [
+        {
+          "internalType": "uint16",
+          "name": "newScore",
+          "type": "uint16"
+        },
+        {
+          "internalType": "uint16",
+          "name": "newStreak",
+          "type": "uint16"
+        },
+        {
+          "internalType": "uint8",
+          "name": "freq30",
+          "type": "uint8"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}
